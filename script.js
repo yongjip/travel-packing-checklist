@@ -1,11 +1,11 @@
-let currentLang = 'en';
+let currentLang = 'ko';
 let data = {};
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('data.json')
-    .then(response => response.json())
-    .then(jsonData => {
-      data = jsonData;
+  fetch('data.yml')
+    .then(response => response.text())
+    .then(yamlText => {
+      data = jsyaml.load(yamlText);
       renderChecklist();
     });
 
@@ -28,10 +28,11 @@ function renderChecklist() {
   const main = document.getElementById('checklist');
   main.innerHTML = '';
 
-  // Render top-level categories
+  // Note: This logic should be similar to the JSON version.
+  // If you have categories like 'baby' with subcategories, handle them similarly.
   for (const [key, category] of Object.entries(data)) {
-    // Baby category might have subcategories
     if (key === 'baby') {
+      // Assuming baby category has subcategories as in the previous example
       renderBabyCategory(main, category);
     } else {
       renderCategory(main, category);
@@ -62,17 +63,19 @@ function renderBabyCategory(container, babyData) {
   title.textContent = currentLang === 'en' ? babyData.title_en : babyData.title_kr;
   categoryDiv.appendChild(title);
 
-  // Baby has subcategories
-  for (const [subKey, subCat] of Object.entries(babyData.subcategories)) {
-    const subDiv = document.createElement('div');
-    subDiv.className = 'subcategory';
+  // Assuming a structure with subcategories under babyData
+  if (babyData.subcategories) {
+    for (const [subKey, subCat] of Object.entries(babyData.subcategories)) {
+      const subDiv = document.createElement('div');
+      subDiv.className = 'subcategory';
 
-    const subTitle = document.createElement('h3');
-    subTitle.textContent = currentLang === 'en' ? subCat.title_en : subCat.title_kr;
-    subDiv.appendChild(subTitle);
+      const subTitle = document.createElement('h3');
+      subTitle.textContent = currentLang === 'en' ? subCat.title_en : subCat.title_kr;
+      subDiv.appendChild(subTitle);
 
-    subDiv.appendChild(createItemList(subCat.items));
-    categoryDiv.appendChild(subDiv);
+      subDiv.appendChild(createItemList(subCat.items));
+      categoryDiv.appendChild(subDiv);
+    }
   }
 
   container.appendChild(categoryDiv);
@@ -85,7 +88,6 @@ function createItemList(items) {
   items.forEach(item => {
     const li = document.createElement('li');
     if (item.subitems) {
-      // If has subitems
       const itemTitle = document.createElement('strong');
       itemTitle.innerHTML = currentLang === 'en' ? item.en : item.kr;
       li.appendChild(itemTitle);
@@ -99,7 +101,6 @@ function createItemList(items) {
       });
       li.appendChild(subUl);
     } else {
-      // Normal item
       li.textContent = currentLang === 'en' ? item.en : item.kr;
     }
     ul.appendChild(li);
