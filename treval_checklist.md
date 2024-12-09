@@ -13,6 +13,7 @@
   - Selfie Stick
   - **If Overseas**
     - Passport
+    - Visa
     - Valid International Driving Permit
     - Neck Pillow
     - Comfortable Walking Shoes
