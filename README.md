@@ -44,7 +44,6 @@
 - **Driving**
   - Valid Driver’s License
   - Car Rental Reservation
-  - GPS/Map App
   - Snacks for Road
   - Sunglasses
 - **Shopping**
@@ -68,7 +67,6 @@
 - **Driving**
   - Car Seat (Own or Rental)
   - Baby Comfort Items (Stuffed Toy)
-  - Toys/Books for Car Ride
   - Snacks & Sippy Cup
   - Baby Blanket
 - **Shopping**
@@ -77,7 +75,6 @@
   - Diaper Bag with Essentials
 - **Eating**
   - Baby Food/Formula
-  - Baby-Friendly Spoon & Bowl
   - Bottles & Utensils
   - Baby Food Containers
   - Bibs & Wipes
