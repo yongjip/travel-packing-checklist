@@ -4,8 +4,8 @@
 
 - **Common**
   - Phone
-    - Charger
   - Apple Watch
+  - Chargers
   - Cables
     - USB 3.0 cables (2)
     - Apple watch charging cables
