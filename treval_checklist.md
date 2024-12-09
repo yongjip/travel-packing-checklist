@@ -16,6 +16,7 @@
     - Valid International Driving Permit
     - Neck Pillow
     - Comfortable Walking Shoes
+    - Travel Adapter
 - **Swimming**
   - Swimwear
   - Sunscreen
