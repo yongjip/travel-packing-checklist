@@ -1,0 +1,14 @@
+title: "Travel Checklist"
+description: "A maintainable, bilingual travel checklist."
+theme: jekyll-theme-midnight
+plugins:
+  - jekyll-seo-tag
+
+# Optional: If you want site-wide navigation
+navbar:
+  - name: "English"
+    url: "/en/travel-checklist"
+  - name: "한국어"
+    url: "/ko/travel-checklist"
+
+markdown: kramdown
