@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <!-- Ensure proper responsive behavior on iPhone -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>Travel Checklist</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Travel Checklist</title>
+<!-- Google Fonts for modern typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
+
 </head>
 <body>
-  <header>
-    <h1 id="page-title">Travel Checklist</h1>
-    <div class="language-toggle">
-      <button id="lang-kr" class="active">KR</button>
-      <button id="lang-en">EN</button>
-    </div>
-  </header>
-  
-  <main id="checklist"></main>
-  
-  <footer>
-    <p>© 2024 Yongjip Kim</p>
-  </footer>
-  
-  <!-- Latest js-yaml -->
-  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
-  <script src="script.js"></script>
+<header>
+  <h1 id="page-title">Travel Checklist</h1>
+  <div class="language-toggle">
+    <button id="lang-en" class="active">EN</button>
+    <button id="lang-kr">KR</button>
+  </div>
+</header>
+
+<main id="checklist"></main>
+
+<footer>
+  <p>© 2024 Your Name</p>
+</footer>
+
+<!-- Include js-yaml from a CDN -->
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
