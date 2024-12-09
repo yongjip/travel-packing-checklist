@@ -9,8 +9,11 @@
   - Cables
     - USB 3.0 cables (2)
     - Apple watch charging cables
+  - Headphones
   - Portable Battery
   - Selfie Stick
+  - Umbrellas
+  - Reusable Shopping Bags / Lightweight Backpack
   - **If Overseas**
     - Passport
     - Visa
@@ -18,6 +21,12 @@
     - Neck Pillow
     - Comfortable Walking Shoes
     - Travel Adapter
+    - Credit Cards (Toss Bank)
+    - Local Currency
+- **Personal Items**
+  - Shaver
+  - Wax
+  - Cosmetics
 - **Swimming**
   - Swimwear
   - Sunscreen
@@ -39,16 +48,14 @@
   - Snacks for Road
   - Sunglasses
 - **Shopping**
-  - Credit Cards (Toss Bank)
-  - Local Currency
   - Extra Luggage Space
-  - Reusable Shopping Bags / Lightweight Backpack
 - **Eating**
   - Restaurant Reservations
   - Local Food Guide / List of Local Restaurants
   - Travel Cutlery (if needed)
   - Snacks for Road
-
+- **Amusement Park**
+  - Folding Chairs
 
 ## Baby
 
