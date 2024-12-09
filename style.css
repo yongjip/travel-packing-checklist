@@ -1,72 +1,136 @@
-body {
-  font-family: sans-serif;
+/* Reset some default styles */
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.5;
-  background: #f7f7f7;
-  color: #333;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styles */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #272727;
+  background: #1f2937;
   color: #fff;
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 
 #page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
   margin: 0;
 }
 
+.language-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .language-toggle button {
-  background: none;
+  background: transparent;
   border: 1px solid #fff;
   color: #fff;
-  margin-left: 5px;
   padding: 5px 10px;
+  font-size: 0.9rem;
   cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
+
+.language-toggle button:hover {
+  background: #fff;
+  color: #333;
+}
+
 .language-toggle button.active {
   background: #fff;
-  color: #000;
+  color: #333;
 }
 
+/* Main content area */
 main {
-  padding: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
+/* Category cards */
 .category, .subcategory {
-  background: #fff;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  padding: 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.category:hover, .subcategory:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .category h2, .subcategory h3 {
-  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #111827;
 }
 
 .items, .subitems {
   list-style: none;
-  padding-left: 20px;
+  padding-left: 0;
 }
 
-.items li, .subitems li {
+.items li {
   margin: 5px 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
+.items li strong {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.subitems {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.subitems li {
+  margin: 2px 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+/* Footer styles */
 footer {
   text-align: center;
   font-size: 0.9em;
-  padding: 10px;
-  background: #272727;
+  padding: 20px;
+  background: #1f2937;
   color: #fff;
+  margin-top: 40px;
 }
 
+/* Responsive Design */
 @media (max-width: 600px) {
-  .items, .subitems {
-    padding-left: 15px;
+  main {
+    padding: 0 10px;
+  }
+  
+  #page-title {
+    font-size: 1.3rem;
+  }
+
+  .category, .subcategory {
+    padding: 15px;
   }
 }
