@@ -25,6 +25,10 @@ common:
       kr: "우산"
     - en: "Reusable Shopping Bags / Lightweight Backpack"
       kr: "재사용 장바구니 / 가벼운 배낭"
+    - en: "Vitamin/Health Supplement"
+      kr: "비타민/건강보조제"
+    - en: "Toothbrush/Toothpaste"
+      kr: "칫솔/치약"
     - en: "**If Overseas**"
       kr: "**해외여행 시**"
       subitems:
